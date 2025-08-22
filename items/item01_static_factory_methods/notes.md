@@ -7,6 +7,13 @@ They can:
 - Return any subtype of their return type
 - Potentially avoid creating new objects
 
+## Naming Convention
+- from
+- of
+- valueOf
+- instance or getInstance
+- create or newInstance
+
 ## Bad
 - Forces creation of new objects every time.
 - Can only return the exact class type.
@@ -14,6 +21,7 @@ They can:
 ## Good
 - Can return cached instances (e.g., Boolean.valueOf)
 - More descriptive method names.
+- Can return any subtype object of the return type.
 
 ---
 

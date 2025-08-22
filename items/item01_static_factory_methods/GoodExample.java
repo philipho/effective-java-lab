@@ -15,6 +15,7 @@ class GoodPerson {
     }
 
     public static GoodPerson of(String name) {
+
         return new GoodPerson(name); // could be cached later if needed
     }
 }
