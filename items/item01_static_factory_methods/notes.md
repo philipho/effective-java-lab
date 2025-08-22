@@ -11,6 +11,7 @@ They can:
 - from
 - of
 - valueOf
+  - Same as `of`
 - instance or getInstance
 - create or newInstance
 
