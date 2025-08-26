@@ -25,3 +25,16 @@ Using ***enum*** is a good option, e.g.
 - It is thread-safe, guaranteed by the JVM
 - It is serialisation safe
 - IT is reflection-safe, i.e. cannot create another instance by reflection
+
+## Others tips
+- Java resolves static function call at compile time by looking at the reference type of the assigned variable.
+- Static method is not inherited. 
+- If a Child has a static function with the exact same name and signature as in the Parent, the Child static function ***hides*** the Parent's static function.
+
+    <pre>
+        Parent p = new Child();
+        p.parentStaticFunction() // will call parent's static function even though the real type is Child
+  
+        var p = new Child();
+        p.parentStaticFunction() // will call child's static function cos var is inferred to be a Child
+    </pre>
